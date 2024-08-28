@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 60%;
+  background: white;
+  border-radius: 10px;
+  min-width: 450px;
+  min-height: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.h1 {
+  color: white;
+  background-color: #248ace;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.h1:hover {
+  background-image: linear-gradient(to right, rgba(55, 108, 138, 0), rgb(255, 0, 76));
+}
+
+#tasks {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+#done1, #delete1, #edit1,
+#done2, #delete2, #edit2 {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+#done1, #done2 {
+  background-color: #03ff18;
+}
+
+#delete1, #delete2 {
+  background-color: #db7c7c;
+}
+
+#edit1, #edit2 {
+  background-color: #0d75ec;
+}
+
+#newtask {
+  display: flex;
+  justify-content: center;
+}
+
+.task-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#task-input {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+#add-task {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-task:hover {
+  background-color: #0056b3;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+}

@@ -1,0 +1,91 @@
+  <!--without using local storage -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Task</title>
+    <link rel="styleSheet" href="todoListTask.css">
+</head>
+<body>
+    <h1 class="h1">Todo List</h1>
+    <div class="container">  
+      <div id="todo-list">
+        <table>
+          <thead>
+            <tr style="font-size: 25px;font-weight: bold;color: rgb(0, 17, 255);">
+              <th>Task</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="task-list">
+            <tr>
+              <td style="font-size: 20px;font-weight: bold;color: rgb(218, 62, 83);" >Task 1</td>
+              <td>
+                <button id="done1">Done</button>
+                <button id="delete1">Delete</button>
+                <button id="edit1">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 20px;font-weight: bold;color:rgb(218, 62, 83)" >Task 2</td>
+              <td>
+                <button id="done2">Done</button>
+                <button id="delete2">Delete</button>
+                <button id="edit2">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody id="task-list"></tbody>
+        </table>
+      </div>
+      
+      <div id="newtask">
+      <input type="text" id="task-input" placeholder="Add a task...">
+      <textarea id="task-input" placeholder="Add a task..."></textarea>
+      <button id="add-task">Add</button>
+      </div>
+    </div>
+    <script src="todoListTask.js"></script>
+</body>
+</html>
+ -->
+
+  <!-- using local storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Task</title>
+    <link rel="stylesheet" href="todoListTask.css">
+</head>
+<body>
+  <div id="todo-list">
+    <table>
+      <thead>
+        <tr style="font-size: 25px; font-weight: bold; color: rgb(0, 17, 255);">
+          <th>Task</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="task-list">
+      </tbody>
+    </table>
+  </div>
+  
+  <div id="newtask">
+    <div class="task-input-container">
+        <input type="text" id="task-input" placeholder="Enter a task">
+        <button id="add-task">Add Task</button>
+    </div>
+</div>
+ 
+  <script src="todoListTask.js"></script>
+</body>
+</html>
+
+
+
